@@ -64,11 +64,11 @@ function App() {
         <Route path="/chat">
         <div className="App">
           <header>
-            <h1>⚛️🔥💬</h1>
+            <h1>💬</h1>
             <nav className="main-nav">
           <ul>
             <li>
-              <Link className="nav-item" to="/questions">Questions</Link>
+              <Link className="nav-item" to="/questions">🤔Questions</Link>
             </li>
           </ul>
         </nav>
