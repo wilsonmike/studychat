@@ -64,11 +64,11 @@ function App() {
         <Route path="/chat">
         <div className="App">
           <header>
-            <h1>💬</h1>
+            <img src="./open-book.svg" alt="Logo"/>
             <nav className="main-nav">
           <ul>
             <li>
-              <Link className="nav-item" to="/questions">🤔Questions</Link>
+              <Link className="nav-item" to="/questions">🤔Interview Questions</Link>
             </li>
           </ul>
         </nav>
@@ -149,7 +149,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>🧐Send</button>
 
     </form>
   </>)
