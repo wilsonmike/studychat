@@ -11,7 +11,10 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
+//[pages - components]
+import Questions from './components/Questions.jsx';
 
+//auth
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
@@ -147,7 +150,7 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="share a study hack" />
 
       <button type="submit" disabled={!formValue}>🧐Send</button>
 
@@ -169,12 +172,12 @@ function ChatMessage(props) {
   </>)
 }
 
-function Questions() {
-  return (<>
-    <div>
-      <h1>Questions</h1>
-    </div>
-  </>)
-}
+// function Questions() {
+//   return (<>
+//     <div>
+//       <h1>Questions</h1>
+//     </div>
+//   </>)
+// }
 
 export default App;
