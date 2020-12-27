@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Questions.module.css';
 import Divider from '@material-ui/core/Divider';
 import logo from './images/coding.svg';
+import code from './images/fizzbuzz.PNG';
 
   class Questions extends React.Component {
     render() {
@@ -13,12 +14,9 @@ import logo from './images/coding.svg';
                 </div>
                 <div className={styles.card}>
                 <h3 className={styles.qHeader}>FizzBuzz</h3>
-                    <p className={styles.q1}>Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.</p>
+                    <p className={styles.q1}>Write a program that prints the numbers from 0 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.</p>
+                    <img className={styles.solution} src={code} alt="FizzBuzz Solution"/>
                 </div>
-                <div className={styles.card}>
-                <h3 className={styles.qHeader}>FizzBuzz</h3>
-                    <p className={styles.q1}>Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.</p>
-                </div>  
             </div>
             
         )
